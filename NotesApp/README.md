@@ -22,7 +22,7 @@
             </div>
         </div>
     </div>
-
+```
 
 <h3>JavaScript Code </h3>
 ```
@@ -104,3 +104,4 @@ function editNote(buttons) {
 };
 // COLORS ARE TAKEN FROM THIS PALETTE
 // https://colorhunt.co/palette/004225f5f5dcffb000ffcf9d
+```
