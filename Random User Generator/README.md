@@ -1,3 +1,26 @@
+<h1>Random User Generator</h1>
+<br>
+<br>
+<br>
+<h3> HTML Code </h3>
+```
+<section>
+        <div class="card">
+            <div class="image-section">
+                <img class="image" src="https://robohash.org/hicveldicta.png" alt="user image">
+            </div>
+            <p class="user-name">Name</p>
+            <p class="user-age">age: 12</p>
+            <p class="user-gender">gender</p>
+            <p class="user-email">E-mail</p>
+        </div>
+        <button type="button" class="button">Random User</button>
+    </section>
+```
+
+
+<h3> JavaScript Code </h3>
+```
 import {users} from './data.js';
 let allUsers = [...users.users];
 let button = document.querySelector(".button");
@@ -16,8 +39,4 @@ button.addEventListener("click", function() {
     gender.innerHTML = "Gender: " + currentUser.gender;
     email.innerHTML = currentUser.email;
 });
-
-
-
-
-
+```
