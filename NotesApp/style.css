@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+/* font-family: 'Tilt Neon', sans-serif; */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Tilt Neon', sans-serif;
+}
+body {
+    max-width: 991px;
+    margin: auto;
+}
+.create-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 50px 0px;
+}
+.create-section input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+}
+.create-section input[type="text"]:focus {
+    outline: none;
+}
+.create-section button {
+    padding: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 200px;
+}
+.notes-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.notes-section .note-card {
+    flex: 0 1 300px;
+    padding: 20px;
+    align-items: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #F5F5DC;
+    box-shadow: 0px 0px 3px #8e8e8e;
+    transition: all 0.3s;
+}
+.notes-section .note-card:hover {
+    transform: scale(1.1);
+}
+.notes-section .note-card .title {
+    font-size: 24px;
+    padding: 10px 0px;
+    color: #FFB000;
+    border-bottom: 2px solid #FFCF9D;
+}
+.notes-section .note-card .content {
+    font-size: 16px;
+    padding: 5px 0px;
+    line-height: 1.5;
+    height: 160px;
+    overflow-y: scroll;
+}
+.notes-section .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-top: 2px solid #FFCF9D;
+}
+.notes-section .footer span.date {
+    flex: 1;
+}
+.notes-section .footer span {
+    color: #004225;
+}
+.notes-section .footer span i {
+    padding: 5px;
+}
+.notes-section .footer span i:hover {
+    cursor: pointer;
+}
