@@ -1,9 +1,10 @@
-<h1>Random User Generator</h1>
-<br>
-<br>
-<br>
-<h3> HTML Code </h3>
-```
+# Random User Generator
+
+***
+
+## HTML Code
+
+``` html
 <section>
         <div class="card">
             <div class="image-section">
@@ -19,8 +20,8 @@
 ```
 
 
-<h3> JavaScript Code </h3>
-```
+## JavaScript Code
+``` js
 import {users} from './data.js';
 let allUsers = [...users.users];
 let button = document.querySelector(".button");
