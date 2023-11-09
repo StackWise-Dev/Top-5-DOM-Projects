@@ -3,7 +3,7 @@
 ***
 
 ## HTML Code
-```
+``` html
 <h1 class="title">Search Products</h1>
     <section class="search-section">
         <input type="search" name="search" id="search" title="search" placeholder="Search products...">
@@ -14,6 +14,7 @@
         
     </div>
 ```
+___
 
 ## JavaScript Code
 ``` js
