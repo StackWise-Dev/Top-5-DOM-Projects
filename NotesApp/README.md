@@ -1,9 +1,9 @@
-<h1> Notes App </h1>
-<br>
-<br>
-<br>
-<h3>HTML Code </h3>
-``` rb
+# Notes App
+
+***
+
+## HTML Code
+``` html
 <div class="create-section">
         <input type="text" name="title" id="title" placeholder="Write Note Title">
         <input type="text" name="note" id="content" title="note" placeholder="Write Note Here...">
@@ -24,8 +24,8 @@
     </div>
 ```
 
-<h3>JavaScript Code </h3>
-``` 
+## JavaScript Code
+``` js
 let title = document.querySelector("#title");
 let content = document.querySelector("#content");
 let btnAdd = document.querySelector(".btn");
@@ -47,6 +47,7 @@ btnAdd.addEventListener("click", function() {
     content.value = "";
     title.focus();
 });
+
 function readNotes() {
     section.innerHTML = "";
     // READING NOTES FROM ARRAY
@@ -55,7 +56,7 @@ function readNotes() {
         card.classList.add("note-card");
         card.setAttribute("data-id", index);
         // HTML CONTENT TO DISPLAY NOTES 
-        card.innerHTML = "<h3 class="title"> ${note.title} </h3>
+        card.innerHTML = `<h3 class="title"> ${note.title} </h3>
                           <p class="content"> ${note.content} </p>
                           <div class="footer">
                             <span class="date"> ${note.date} </span>
@@ -65,7 +66,7 @@ function readNotes() {
                             <span class="edit-icon">
                                 <i class="fa-solid fa-pencil"></i>
                             </span>
-                          </div>";
+                          </div>`;
         section.insertBefore(card, section.firstChild);
     });
     let btnDel = document.querySelectorAll(".del-icon");
@@ -73,6 +74,7 @@ function readNotes() {
     deleteNote(btnDel);
     editNote(btnEdit);
 };
+
 // DELETING THE NOTES
 function deleteNote(buttons) {
     buttons.forEach((button, index) => {
@@ -83,6 +85,7 @@ function deleteNote(buttons) {
         });
     });
 }
+
 // EDITING THE NOTES
 function editNote(buttons) {
     buttons.forEach((button) => {
