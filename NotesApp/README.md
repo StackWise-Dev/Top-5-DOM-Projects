@@ -3,7 +3,7 @@
 <br>
 <br>
 <h3>HTML Code </h3>
-```
+``` javascript
 <div class="create-section">
         <input type="text" name="title" id="title" placeholder="Write Note Title">
         <input type="text" name="note" id="content" title="note" placeholder="Write Note Here...">
@@ -25,7 +25,7 @@
 ```
 
 <h3>JavaScript Code </h3>
-```
+``` javascript
 let title = document.querySelector("#title");
 let content = document.querySelector("#content");
 let btnAdd = document.querySelector(".btn");
