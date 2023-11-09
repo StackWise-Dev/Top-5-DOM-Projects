@@ -1,8 +1,7 @@
 <h1> Product Filter </h1>
-<br>
-<br>
-<br>
-<h3>HTML Code </h3>
+***
+
+## HTML Code
 ```
 <h1 class="title">Search Products</h1>
     <section class="search-section">
@@ -15,8 +14,8 @@
     </div>
 ```
 
-<h3>JavaScript Code </h3>
-```
+## JavaScript Code
+``` js
 import { data } from "./data.js";
 let products = [...data.products];
 let productSection = document.querySelector(".products-section");
