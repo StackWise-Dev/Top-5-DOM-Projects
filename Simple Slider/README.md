@@ -1,9 +1,9 @@
-<h1>Simple Slider</h1>
-<br>
-<br>
-<br>
-<h3>HTML Code</h3>
-```
+# Simple Slider
+
+***
+
+## HTML Code
+``` html
 <section class="slider-section">
         <div class="main-image">
             <img src="./images/image1.jpg" alt="slider image">
@@ -28,8 +28,8 @@
     </section>
 ```
 
-<h3>JavaScript Code</h3>
-```
+## JavaScript Code
+``` js
 let main_image = document.querySelector(".main-image > img");
 let thumbnails = document.querySelectorAll(".thumb");
 
