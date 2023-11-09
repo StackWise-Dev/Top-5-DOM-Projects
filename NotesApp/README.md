@@ -25,7 +25,7 @@
 ```
 
 <h3>JavaScript Code </h3>
-``` rb
+``` 
 let title = document.querySelector("#title");
 let content = document.querySelector("#content");
 let btnAdd = document.querySelector(".btn");
@@ -55,7 +55,7 @@ function readNotes() {
         card.classList.add("note-card");
         card.setAttribute("data-id", index);
         // HTML CONTENT TO DISPLAY NOTES 
-        card.innerHTML = `<h3 class="title"> ${note.title} </h3>
+        card.innerHTML = "<h3 class="title"> ${note.title} </h3>
                           <p class="content"> ${note.content} </p>
                           <div class="footer">
                             <span class="date"> ${note.date} </span>
@@ -65,7 +65,7 @@ function readNotes() {
                             <span class="edit-icon">
                                 <i class="fa-solid fa-pencil"></i>
                             </span>
-                          </div>`;
+                          </div>";
         section.insertBefore(card, section.firstChild);
     });
     let btnDel = document.querySelectorAll(".del-icon");
