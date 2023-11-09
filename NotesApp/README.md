@@ -9,7 +9,6 @@
         <input type="text" name="note" id="content" title="note" placeholder="Write Note Here...">
         <button type="button" class="btn"> <i class="fa-solid fa-plus"></i> Add Note</button>
     </div>
-
     <div class="notes-section">
         <div class="note-card">
             <h3 class="title">Note's Title</h3>
@@ -23,7 +22,6 @@
             </div>
         </div>
     </div>
-```
 
 
 <h3>JavaScript Code </h3>
@@ -33,9 +31,7 @@ let content = document.querySelector("#content");
 let btnAdd = document.querySelector(".btn");
 let section = document.querySelector(".notes-section");
 let date = new Date().toLocaleDateString();
-
 let notesArray = [];
-
 btnAdd.addEventListener("click", function() {
     if(!content.value || !title.value) return alert("Please Write Something first..");
     // CREATING NEW NOTE
@@ -51,7 +47,6 @@ btnAdd.addEventListener("click", function() {
     content.value = "";
     title.focus();
 });
-
 function readNotes() {
     section.innerHTML = "";
     // READING NOTES FROM ARRAY
@@ -73,13 +68,11 @@ function readNotes() {
                           </div>`;
         section.insertBefore(card, section.firstChild);
     });
-
     let btnDel = document.querySelectorAll(".del-icon");
     let btnEdit = document.querySelectorAll(".edit-icon");
     deleteNote(btnDel);
     editNote(btnEdit);
 };
-
 // DELETING THE NOTES
 function deleteNote(buttons) {
     buttons.forEach((button, index) => {
@@ -90,7 +83,6 @@ function deleteNote(buttons) {
         });
     });
 }
-
 // EDITING THE NOTES
 function editNote(buttons) {
     buttons.forEach((button) => {
@@ -110,8 +102,5 @@ function editNote(buttons) {
         });
     });
 };
-
 // COLORS ARE TAKEN FROM THIS PALETTE
 // https://colorhunt.co/palette/004225f5f5dcffb000ffcf9d
-
-```
